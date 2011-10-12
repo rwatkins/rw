@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block head %}
+<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAw02e2dtZmV0JZGeP1sICGhSIl7oh0SQjsxhwxvdr-JA0cvG23xTbwr9OHvB0CBy_1WyIXXsN7PHcwQ"></script>
+<script type="text/javascript">google.load("jquery", "1.4.2");</script>
+<script type="text/javascript" src="/mymedia/js/contact.js"></script>
+<link rel="stylesheet" href="/mymedia/css/contact.css" />
+{% endblock %}
+
+{% block content %}
+<h2>Contact me</h2>
+
+<form action="/contact/submit" method="post" name="contact_form">
+    <ul>
+        <li>Name<br /><input name="name" title="name" type="text" /></li>
+        <li>Email<br /><input name="email" title="email" type="text" /></li>
+        <li>Message<br /><textarea name="message" title="message" cols="40" rows="6"></textarea></li>
+    </ul>
+</form>
+{% endblock %}
