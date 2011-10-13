@@ -1,4 +1,12 @@
 Flask==0.8
+Flask-Mail==0.6.1
 Jinja2==2.6
 Werkzeug==0.8.1
+blinker==1.1
+chardet==1.0.1
+lamson==1.1
+lockfile==0.9.1
+mock==0.7.2
+nose==1.1.2
+python-daemon==1.6
 wsgiref==0.1.2
